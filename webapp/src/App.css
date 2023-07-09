@@ -1,0 +1,172 @@
+.App {
+  margin: 0;
+}
+
+.hide {
+  display: none;
+}
+
+h1 {
+  font-size: 42px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+.loader-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.834);
+  z-index: 1;
+  top: 0;
+}
+
+.spinner {
+  width: 64px;
+  height: 64px;
+  border: 3px solid;
+  border-color: #f13d3d transparent #ffffff transparent;
+  border-radius: 50%;
+  animation: spin-anim 1.2s linear infinite;
+}
+
+@keyframes spin-anim {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+.app-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 20px;
+}
+
+.connectors {
+  display: flex;
+  align-content: space-between;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.connector-wrapper {
+  width: 100%;
+  border-bottom: 1px solid #dadada;
+  margin-bottom: 20px;
+}
+
+.connector {
+  display: flex;
+  align-items: flex-start;
+  padding-bottom: 10px;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.connector p {
+  font-size: 14px;
+  margin: 0 0 10px 0;
+}
+
+.connector > p.title {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.connector p.subtitle {
+  font-size: 13px;
+  margin-top: -5px;
+  color: #565656;
+}
+
+.connector .button {
+  background: transparent;
+  border: 1px solid #6d6d6d;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 7px;
+  font-size: 13px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.connector .button:hover {
+  background: #e4e4e4;
+}
+
+.connector .account {
+  display: flex;
+  flex-direction: row;
+}
+
+.connector .account .logout {
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+
+.delegations-wrapper, .lookups-wrapper {
+  text-align: left;
+}
+
+.delegations-wrapper .title, .lookups-wrapper .title{
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.delegations-wrapper .empty, .lookups-wrapper .empty {
+  font-style: italic;
+}
+
+.set-delegation form {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  text-align: left;
+}
+
+.set-delegation form label {
+  font-weight: 600;
+}
+
+.set-delegation form select, .set-delegation form input {
+  margin: 10px 0;
+  padding: 7px 0;
+  text-indent: 5px;
+  width: 400px;
+  border-radius: 5px;
+  border: 1px solid #6d6d6d;
+}
+
+.set-delegation form input[type="submit"] {
+  width: 100px;
+  padding-left: 12px;
+}
+
+.nfts-wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 2%
+}
+
+.nfts-wrapper p.empty {
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  color: #575757;
+  margin: 0;
+}
+
