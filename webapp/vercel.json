@@ -1,9 +1,18 @@
 {
+  // Configuration file version
   "version": 2,
+
+  // Name of the identity
   "name": "identity",
+
+  // Functions configuration
   "functions": {
+    // Server configuration
     "api/server.ts": {
+      // Memory allocation for the server (in megabytes)
       "memory": 1024,
+
+      // Maximum duration for the server execution (in seconds)
       "maxDuration": 10
     }
   }
